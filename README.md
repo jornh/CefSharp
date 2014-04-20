@@ -14,7 +14,7 @@ Apart from code samples mentioned above work-in-progress documentation can be fo
 
 Binary releases contain everything needed to embed Chromium in your CLR application.
 
-- **Pre-release** - CefSharp-3.29.0-pre.0 Currently only available as a WPF [NuGet](http://www.nuget.org/packages/CefSharp.Wpf/3.29.0-pre0). NuGet is CefSharp's new primary (only?) binary delivery mechanism. 
+- **Pre-release** - CefSharp 31.0.0-pre1 Currently only available as a WPF [NuGet](http://www.nuget.org/packages/CefSharp.Wpf/3.29.0-pre0). NuGet is CefSharp's new primary (only?) binary delivery mechanism. 
 * **Stable** (.NET 4): CefSharp-1.25.7 - 
 [binaries](https://github.com/cefsharp/CefSharp/releases/download/v1.25.7/CefSharp-v1.25.7-binaries.zip),
 [source](https://github.com/cefsharp/CefSharp/archive/v1.25.7.zip), + [WPF](http://www.nuget.org/packages/CefSharp.Wpf/) or 
