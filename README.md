@@ -14,7 +14,7 @@ Apart from code samples mentioned above work-in-progress documentation can be fo
 
 Binary releases contain everything needed to embed Chromium in your CLR application.
 
-- **Pre-release** - CefSharp-3.29.0-pre.0 Currently only available as a WPF [NuGet](http://www.nuget.org/packages/CefSharp.Wpf/3.29.0-pre0). NuGet is CefSharp's new primary (only?) binary delivery mechanism. 
+- **Pre-release** - CefSharp 31.0.0-preN Currently only available as a [WPF NuGet](http://www.nuget.org/packages/CefSharp.Wpf). NuGet is CefSharp's new primary (only?) binary delivery mechanism. 
 * **Stable** (.NET 4): CefSharp-1.25.7 - 
 [binaries](https://github.com/cefsharp/CefSharp/releases/download/v1.25.7/CefSharp-v1.25.7-binaries.zip),
 [source](https://github.com/cefsharp/CefSharp/archive/v1.25.7.zip), + [WPF](http://www.nuget.org/packages/CefSharp.Wpf/) or 
@@ -30,6 +30,8 @@ See the [SF Downloads](https://sourceforge.net/projects/cefsharp/files/) page fo
 * Development is done in the `master` branch, which *used to be called* `CefSharp3` during the development cycle. New features are preferably added in feature branches, if the changes are more than trivial.
 * Ultra-stable/LTS work is done in `CefSharp1`.
 * [The CefSharp GitHub project page](https://github.com/cefsharp/CefSharp) is the recommended starting place. This is the "official" CefSharp fork, as maintained by the CefSharp community. You can also view [the entire network of public forks/branches](https://github.com/cefsharp/CefSharp/network).
+
+[![Build status](https://ci.appveyor.com/api/projects/status/prnmky5l89afju0s)](https://ci.appveyor.com/project/jornh/cefsharp)
 
 # Links
 
