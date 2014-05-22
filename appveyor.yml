@@ -1,0 +1,6 @@
+environment:
+  VisualStudioVersion: 11.0
+
+configuration:
+  - Debug
+  - Release
