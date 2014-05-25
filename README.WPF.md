@@ -21,6 +21,8 @@ To be able to use CefSharp.Wpf, you basically just have to add a WebView like th
 
 ...and in the code-behind some code like this:
 
+_**FIXME This is CefSharp1 OnWebViewPropertyChanged API it is now replaced - see SO article**_
+
 ``` csharp
     public partial class MainWindow : Window
     {
