@@ -8,7 +8,8 @@ configuration:
 before_build:
   - cmd: nuget restore
 
-test_script:
+# http://help.appveyor.com/discussions/questions/311-x86-version-of-xunit
+xxxdisablexxxtest_script:
   - cd C:\projects\cefsharp\CefSharp.Test\bin\x86\%configuration%\
   - cd
   - copy C:\Tools\xUnit\*.*
