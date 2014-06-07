@@ -1,5 +1,5 @@
 environment:
-  VisualStudioVersion: 11.0
+#  VisualStudioVersion: 11.0
 
 configuration:
   - Debug
@@ -12,7 +12,6 @@ before_build:
 # xxxdisablexxx
 
 test_script:
-  - cd
-  - cd C:\Tools\xUnit\*.*
+  - cd C:\Tools\xUnit\
   - copy C:\projects\cefsharp\CefSharp.Test\bin\x86\%configuration%\*.*
   - xunit.console.clr4.x86 CefSharp.Test.dll /appveyor
