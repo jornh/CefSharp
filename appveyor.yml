@@ -9,7 +9,7 @@ before_build:
   - cmd: nuget restore
 
 # http://help.appveyor.com/discussions/questions/311-x86-version-of-xunit
-xxxdisablexxx
+# xxxdisablexxx
 
 test_script:
   - cd
