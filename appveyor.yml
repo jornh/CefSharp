@@ -9,8 +9,10 @@ before_build:
   - cmd: nuget restore
 
 # http://help.appveyor.com/discussions/questions/311-x86-version-of-xunit
-xxxdisablexxxtest_script:
-  - cd C:\projects\cefsharp\CefSharp.Test\bin\x86\%configuration%\
+xxxdisablexxx
+
+test_script:
   - cd
-  - copy C:\Tools\xUnit\*.*
-  - REM xunit.console.clr4.x86 CefSharp.Test.dll /appveyor
+  - cd C:\Tools\xUnit\*.*
+  - copy C:\projects\cefsharp\CefSharp.Test\bin\x86\%configuration%\*.*
+  - xunit.console.clr4.x86 CefSharp.Test.dll /appveyor
