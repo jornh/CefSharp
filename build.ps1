@@ -232,9 +232,9 @@ function DownloadNuget()
 	}
 }
 
-DownloadNuget
+#DownloadNuget
 
-NugetPackageRestore
+#NugetPackageRestore
 
 switch -Exact ($Target) {
     "nupkg"

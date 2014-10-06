@@ -7,8 +7,8 @@ shallow_clone: true
 #  - Debug
 #  - Release
 
-#before_build:
-#  - cmd: nuget restore
+before_build:
+  - cmd: nuget restore
 
 # to run your custom scripts instead of automatic MSBuild
 build_script:
