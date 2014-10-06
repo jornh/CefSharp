@@ -3,15 +3,22 @@ environment:
 
 shallow_clone: true
 
-configuration:
-  - Debug
-  - Release
+#configuration:
+#  - Debug
+#  - Release
 
 before_build:
   - cmd: nuget restore
+
+# to run your custom scripts instead of automatic MSBuild
+build_script:
+  - build.ps1
 
 test_script:
   - cd C:\projects\cefsharp\CefSharp.Test\bin\x86\%configuration%\
   - cd
   - REM copy C:\Tools\xUnit\*.*
   - REM xunit.console.clr4.x86 CefSharp.Test.dll /appveyor
+
+artifacts:
+  - path: NuGet\*.nupkg
