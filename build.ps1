@@ -196,7 +196,7 @@ function VSX
 
 function NugetPackageRestore
 {
-    $nuget = Join-Path $env:LOCALAPPDATA .\nuget\NuGet.exe
+    $nuget = Join-Path $WorkingDir .\nuget\NuGet.exe
     if(-not (Test-Path $nuget)) {
         Die "Please install nuget. More information available at: http://docs.nuget.org/docs/start-here/installing-nuget"
     }
@@ -209,7 +209,7 @@ function NugetPackageRestore
 
 function Nupkg
 {
-    $nuget = Join-Path $env:LOCALAPPDATA .\nuget\NuGet.exe
+    $nuget = Join-Path $WorkingDir .\nuget\NuGet.exe
     if(-not (Test-Path $nuget)) {
         Die "Please install nuget. More information available at: http://docs.nuget.org/docs/start-here/installing-nuget"
     }
@@ -224,7 +224,7 @@ function Nupkg
 
 function DownloadNuget()
 {
-	$nuget = Join-Path $env:LOCALAPPDATA .\nuget\NuGet.exe
+	$nuget = Join-Path $WorkingDir .\nuget\NuGet.exe
     if(-not (Test-Path $nuget))
 	{
 		$client = New-Object System.Net.WebClient;
@@ -232,15 +232,15 @@ function DownloadNuget()
 	}
 }
 
-#DownloadNuget
+DownloadNuget
 
-#NugetPackageRestore
+NugetPackageRestore
 
 switch -Exact ($Target) {
     "nupkg"
 	{
-		VSX v120
-        #VSX v110
+        #VSX v120
+        VSX v110
         Nupkg
     }
 	"nupkg-only"
